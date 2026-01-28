@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn daemon for Flask app
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/login_ssr
+EnvironmentFile=/home/ubuntu/login_ssr/.env
+ExecStart=/home/ubuntu/login_ssr/venv/bin/gunicorn login_ssr:app --bind 127.0.0.1:8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
