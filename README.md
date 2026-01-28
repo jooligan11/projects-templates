@@ -1,8 +1,11 @@
-# projects-templates
+# projects-templates 
+
 Repositorio de plantillas técnicas para proyectos Flask, Docker y AWS. Incluye estructuras base listas para reutilizar en despliegues con EC2, RDS, Nginx, Gunicorn y arquitecturas de red en AWS. Diseñado para estandarizar proyectos, acelerar despliegues y mantener buenas prácticas de IT Ops y DevOps.
 ---
+
 ## 📁 Plantillas incluidas
-1️⃣ portal_login_aws
+
+### portal_login_aws
 Plantilla base para un portal de login en Flask desplegado en AWS EC2, conectado a RDS MySQL, usando Gunicorn como servidor WSGI y Nginx como proxy inverso.
 
 📂 Estructura de carpetas de la plantilla
